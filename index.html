@@ -214,7 +214,7 @@
         }
         return get_par;
     }
-    let target_game_name = getPar('game_name');
+    let target_game_name = decodeURIComponent(getPar('game_name'));
     if(target_game_name){
         let temp_list = []
             // .concat(document.querySelectorAll('br'))
